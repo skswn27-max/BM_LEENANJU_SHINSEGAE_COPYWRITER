@@ -5334,3 +5334,268 @@ a:hover {
     .copy-case-line,
     .copy-frame-sentence { font-size: 1.22rem !important; }
 }
+
+/* =============================================
+   Editorial lookbook — SDS Panel Image Content pattern
+   ============================================= */
+body.lookbook .nav-menu {
+    background: transparent;
+    border: none;
+    padding: 0;
+    gap: 6px;
+}
+body.lookbook .nav-menu a {
+    background: transparent;
+    border-radius: 0;
+    padding: 8px 12px;
+    text-transform: none;
+    font-size: 0.82rem;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+}
+body.lookbook .nav-menu a:hover {
+    background: transparent;
+    color: var(--sg-red);
+}
+body.lookbook .nav-menu a.active,
+body.lookbook .nav-menu li.active a {
+    color: var(--sg-red);
+    background: transparent;
+    box-shadow: none;
+}
+body.lookbook .navbar.scrolled .nav-menu {
+    background: transparent;
+    border: none;
+}
+body.lookbook .navbar.scrolled .nav-menu a {
+    background: transparent;
+}
+body.lookbook .navbar.scrolled .nav-menu a:hover {
+    background: transparent;
+    color: var(--sg-red);
+}
+body.lookbook .logo,
+body.lookbook .navbar.scrolled .logo {
+    color: var(--sg-red);
+}
+body.lookbook .project-item {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0 0 72px;
+    margin: 0;
+}
+body.lookbook .cat-projects {
+    padding-top: 0;
+}
+body.lookbook .cat-projects .container {
+    max-width: none;
+    padding: 0;
+}
+body.lookbook .hero.hero-light {
+    background: var(--bg);
+    align-items: stretch;
+    justify-content: flex-end;
+}
+body.lookbook .hero-content {
+    max-width: none;
+    width: 100%;
+    text-align: left;
+    padding: 140px 48px 56px;
+    align-items: flex-start;
+}
+body.lookbook .hero-title {
+    font-size: clamp(3.2rem, 9vw, 7.2rem) !important;
+    letter-spacing: -0.055em;
+    line-height: 0.92 !important;
+    font-weight: 800;
+    text-align: left;
+}
+body.lookbook .hero-sub-label {
+    letter-spacing: 0.18em;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+body.lookbook .hero-tagline {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 1.05rem;
+    max-width: 28em;
+}
+body.lookbook .hero-career {
+    text-align: left !important;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    margin-top: 28px;
+    font-size: 0.84rem;
+    color: var(--text-muted);
+}
+body.lookbook .scroll-indicator { display: none; }
+
+.lookbook-stack {
+    border-top: 1px solid var(--border);
+}
+.lookbook-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 86vh;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+}
+.lookbook-row.reverse {
+    direction: rtl;
+}
+.lookbook-row.reverse > * {
+    direction: ltr;
+}
+.lookbook-media {
+    overflow: hidden;
+    background: var(--bg-subtle);
+    min-height: 86vh;
+}
+.lookbook-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 86vh;
+    transition: transform 0.7s ease;
+}
+.lookbook-row:hover .lookbook-media img {
+    transform: scale(1.04);
+}
+.lookbook-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px 56px;
+    background: var(--bg);
+}
+.lookbook-num {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    font-weight: 800;
+    color: var(--sg-red);
+}
+.lookbook-brand {
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    margin: 10px 0 18px;
+    font-weight: 600;
+}
+.lookbook-line {
+    font-size: clamp(2rem, 4.2vw, 3.6rem);
+    font-weight: 800;
+    letter-spacing: -0.045em;
+    line-height: 1.12;
+    margin: 0 0 18px;
+}
+.lookbook-why {
+    margin: 0 0 28px;
+    font-size: 1.02rem;
+    color: var(--text-sub);
+    max-width: 22em;
+    line-height: 1.5;
+}
+.lookbook-result {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+}
+.lookbook-go {
+    margin-top: 28px;
+    font-size: 0.82rem;
+    font-weight: 800;
+    color: var(--sg-red);
+}
+
+.case-hero {
+    padding: 80px 48px 32px;
+    max-width: 1100px;
+}
+article:first-of-type .case-hero {
+    padding-top: 140px;
+}
+.case-hero .case-kicker {
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    font-weight: 800;
+    color: var(--sg-red);
+    text-transform: uppercase;
+}
+.case-hero h1 {
+    font-size: clamp(2.6rem, 7vw, 5.6rem);
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    line-height: 0.95;
+    margin: 16px 0 0;
+    color: var(--text);
+}
+.case-caption {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 0.8fr;
+    gap: 28px;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+}
+.case-caption small {
+    display: block;
+    font-size: 0.65rem;
+    letter-spacing: 0.16em;
+    font-weight: 800;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+.case-caption p {
+    margin: 0;
+    font-size: 1.02rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.case-gallery {
+    padding: 24px 48px 80px;
+}
+.case-gallery .showcase-grid {
+    gap: 8px;
+}
+body.lookbook .cat-hero {
+    display: none;
+}
+body.lookbook .cat-projects {
+    padding-top: 0;
+}
+
+@media (max-width: 900px) {
+    body.lookbook .hero-content {
+        padding: 120px 24px 40px;
+    }
+    .lookbook-row,
+    .lookbook-row.reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+        min-height: 0;
+    }
+    .lookbook-media,
+    .lookbook-media img {
+        min-height: 52vh;
+    }
+    .lookbook-copy {
+        padding: 36px 24px 48px;
+    }
+    .case-hero {
+        padding: 120px 24px 24px;
+    }
+    .case-caption {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .case-gallery {
+        padding: 16px 16px 64px;
+    }
+}
