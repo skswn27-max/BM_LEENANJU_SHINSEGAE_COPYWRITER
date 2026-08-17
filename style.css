@@ -5490,8 +5490,8 @@ body.lookbook .hero-career {
 }
 body.lookbook .hero-howto {
     width: 100%;
-    margin-top: 48px;
-    padding-top: 40px;
+    margin-top: 80px;
+    padding-top: 64px;
     border-top: 1px solid var(--border);
 }
 body.lookbook .hero-howto-label {
