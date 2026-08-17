@@ -37,7 +37,7 @@ window.addEventListener('scroll', () => {
 const typingPhrases = [
     '여배우 패딩',
     'Essential Set-Up',
-    '테니스 코트 in 서울'
+    "Sergio Tacchini's Clubhouse"
 ];
 
 let phraseIndex = 0;
