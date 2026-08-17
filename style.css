@@ -5649,6 +5649,22 @@ article:first-of-type .case-hero {
 .case-gallery .showcase-grid {
     gap: 8px;
 }
+body.lookbook .case-gallery .showcase-item {
+    aspect-ratio: auto;
+    padding-top: 0;
+    height: auto;
+    display: block;
+    background: var(--bg-subtle);
+}
+body.lookbook .case-gallery .showcase-item img {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    object-fit: cover;
+    display: block;
+}
 body.lookbook .cat-hero {
     display: none;
 }
