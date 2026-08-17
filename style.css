@@ -5458,22 +5458,22 @@ body.lookbook .hero-tagline {
     max-width: 28em;
 }
 body.lookbook .hero-belief {
-    margin: 8px 0 16px;
-    font-size: 1.12rem !important;
-    font-weight: 600;
-    line-height: 1.55;
-    color: var(--text-sub);
-    max-width: 28em;
+    margin: 8px 0 20px;
+    font-size: clamp(1.55rem, 3.2vw, 2.4rem) !important;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text);
+    max-width: none;
     text-align: left;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.04em;
 }
 body.lookbook .hero-method {
     margin: 0 0 8px;
-    font-size: 1.05rem;
-    font-weight: 700;
+    font-size: 0.98rem;
+    font-weight: 600;
     line-height: 1.55;
     color: var(--sg-red);
-    max-width: 34em;
+    max-width: 36em;
     text-align: left;
 }
 body.lookbook .hero-career {
