@@ -5410,6 +5410,7 @@ body.lookbook .hero-title {
     line-height: 0.92 !important;
     font-weight: 800;
     text-align: left;
+    color: var(--text-muted) !important;
 }
 body.lookbook .hero-sub-label {
     letter-spacing: 0.18em;
@@ -5426,12 +5427,13 @@ body.lookbook .hero-tagline {
 }
 body.lookbook .hero-belief {
     margin: 8px 0 16px;
-    font-size: 1.12rem;
+    font-size: 1.12rem !important;
     font-weight: 600;
     line-height: 1.55;
     color: var(--text-sub);
     max-width: 28em;
     text-align: left;
+    letter-spacing: -0.02em;
 }
 body.lookbook .hero-method {
     margin: 0 0 8px;
