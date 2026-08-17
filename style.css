@@ -5460,12 +5460,16 @@ body.lookbook .hero-tagline {
 body.lookbook .hero-belief {
     margin: 8px 0 20px;
     font-size: clamp(1.55rem, 3.2vw, 2.4rem) !important;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1.4;
     color: var(--text);
     max-width: none;
     text-align: left;
     letter-spacing: -0.04em;
+}
+body.lookbook .hero-belief-line {
+    display: block;
+    font-weight: 800;
 }
 body.lookbook .hero-method {
     margin: 0 0 8px;
