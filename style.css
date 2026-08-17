@@ -5534,24 +5534,38 @@ body.lookbook .scroll-indicator { display: none; }
     color: var(--sg-red);
 }
 .lookbook-brand {
-    font-size: 0.84rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    text-transform: uppercase;
     color: var(--text-muted);
     margin: 10px 0 18px;
-    font-weight: 600;
 }
 .lookbook-line {
-    font-size: clamp(2rem, 4.2vw, 3.6rem);
-    font-weight: 800;
-    letter-spacing: -0.045em;
-    line-height: 1.12;
-    margin: 0 0 18px;
+    font-size: clamp(1.55rem, 3.2vw, 2.4rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.4;
+    margin: 0 0 12px;
+    color: var(--text);
 }
 .lookbook-why {
     margin: 0 0 20px;
     font-size: 1.02rem;
-    color: var(--text-sub);
-    max-width: 22em;
-    line-height: 1.5;
+    font-weight: 700;
+    color: var(--sg-red);
+    max-width: 36em;
+    line-height: 1.55;
+}
+.lookbook-line.copy-fillin,
+.lookbook-why.copy-fillin {
+    display: inline-block;
+}
+.lookbook-media-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 86vh;
 }
 .lookbook-keys {
     display: flex;
@@ -5646,12 +5660,24 @@ article:first-of-type .case-hero {
     text-transform: uppercase;
 }
 .case-hero h1 {
-    font-size: clamp(2.6rem, 7vw, 5.6rem);
-    font-weight: 800;
-    letter-spacing: -0.05em;
-    line-height: 0.95;
+    font-size: clamp(1.55rem, 3.2vw, 2.4rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.4;
     margin: 16px 0 0;
     color: var(--text);
+}
+.case-hero .case-method {
+    margin: 12px 0 0;
+    font-size: 1.02rem;
+    font-weight: 700;
+    line-height: 1.55;
+    color: var(--sg-red);
+    max-width: 36em;
+}
+.case-hero h1.copy-fillin,
+.case-hero .case-method.copy-fillin {
+    display: inline-block;
 }
 .case-caption {
     display: grid;
