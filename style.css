@@ -5915,8 +5915,16 @@ body.lookbook .career-compact {
         padding: 36px 24px 48px;
     }
     .lookbook-stats-3 {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         max-width: none;
+        gap: 8px 10px;
+    }
+    .lookbook-stats-3 strong {
+        font-size: 1rem;
+    }
+    .lookbook-stats-3 span {
+        font-size: 0.62rem;
+        letter-spacing: 0.06em;
     }
     .case-hero {
         padding: 120px 24px 24px;
