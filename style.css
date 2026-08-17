@@ -5495,17 +5495,59 @@ body.lookbook .scroll-indicator { display: none; }
     margin: 0 0 18px;
 }
 .lookbook-why {
-    margin: 0 0 28px;
+    margin: 0 0 20px;
     font-size: 1.02rem;
     color: var(--text-sub);
     max-width: 22em;
     line-height: 1.5;
 }
-.lookbook-result {
-    font-size: 0.82rem;
+.lookbook-keys {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 24px;
+}
+.lookbook-keys span {
+    font-size: 0.72rem;
     font-weight: 700;
-    color: var(--text-muted);
     letter-spacing: 0.04em;
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    color: var(--text-sub);
+    background: var(--bg-subtle);
+}
+.lookbook-stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 28px;
+    margin: 0;
+    padding: 20px 0 0;
+    border-top: 1px solid var(--border);
+    list-style: none;
+    max-width: 22em;
+}
+.lookbook-stats:has(li:only-child) {
+    grid-template-columns: 1fr;
+}
+.lookbook-stats li {
+    min-width: 0;
+}
+.lookbook-stats strong {
+    display: block;
+    font-size: 1.45rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.15;
+    color: var(--text);
+}
+.lookbook-stats span {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
 }
 .lookbook-go {
     margin-top: 28px;
@@ -5571,6 +5613,74 @@ body.lookbook .cat-projects {
     padding-top: 0;
 }
 
+.copy-fillin {
+    color: var(--sg-red);
+    font-weight: 600;
+    background: var(--sg-red-soft);
+    border: 1px dashed rgba(230, 0, 18, 0.45);
+    padding: 6px 10px;
+    display: inline-block;
+    line-height: 1.45;
+}
+p.copy-fillin,
+.copy-board p.copy-fillin,
+.season-sheet p.copy-fillin {
+    display: block;
+    width: 100%;
+    min-height: 3.2em;
+    padding: 14px 16px;
+    margin: 0;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+}
+.lookbook-stats .copy-fillin {
+    font-size: 0.82rem;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    padding: 8px 10px;
+}
+
+.copy-board,
+.season-sheet {
+    padding: 8px 48px 40px;
+    max-width: 1100px;
+}
+.copy-board-label,
+.season-sheet-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    font-weight: 800;
+    color: var(--sg-red);
+    margin-bottom: 16px;
+}
+.copy-board-grid,
+.season-sheet-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 28px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+.copy-board-grid small,
+.season-sheet-grid small {
+    display: block;
+    font-size: 0.65rem;
+    letter-spacing: 0.16em;
+    font-weight: 800;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+.copy-board-note {
+    margin: 16px 0 0;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+body.lookbook .career-compact {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 48px 24px;
+}
+
 @media (max-width: 900px) {
     body.lookbook .hero-content {
         padding: 120px 24px 40px;
@@ -5595,7 +5705,15 @@ body.lookbook .cat-projects {
         grid-template-columns: 1fr;
         gap: 16px;
     }
-    .case-gallery {
-        padding: 16px 16px 64px;
+    .case-gallery,
+    .copy-board,
+    .season-sheet,
+    body.lookbook .career-compact {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .copy-board-grid,
+    .season-sheet-grid {
+        grid-template-columns: 1fr;
     }
 }
