@@ -5697,6 +5697,16 @@ body.lookbook .case-gallery .showcase-item img {
     object-fit: cover;
     display: block;
 }
+body.lookbook .case-gallery .gallery-square .showcase-item {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    height: auto;
+}
+body.lookbook .case-gallery .gallery-square .showcase-item img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
 body.lookbook .cat-hero {
     display: none;
 }
