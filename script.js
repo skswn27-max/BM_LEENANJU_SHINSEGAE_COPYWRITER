@@ -151,7 +151,25 @@ const counterObserver = new IntersectionObserver((entries) => {
 // =============================================
 // 초기화
 // =============================================
+function showHashedCase() {
+    const articles = document.querySelectorAll('article[id]');
+    if (!articles.length) return;
+
+    const id = decodeURIComponent((location.hash || '').replace(/^#/, ''));
+    const match = id ? document.getElementById(id) : null;
+    const matchedArticle = match && match.tagName === 'ARTICLE' ? match : null;
+
+    articles.forEach((article) => {
+        article.hidden = Boolean(matchedArticle) && article !== matchedArticle;
+    });
+
+    if (matchedArticle) {
+        window.scrollTo(0, 0);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    showHashedCase();
     // 타이핑 효과 시작
     setTimeout(typeEffect, 1000);
     
@@ -186,6 +204,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     ensureInstagramEmbeds();
 });
+
+window.addEventListener('hashchange', showHashedCase);
 
 // 인스타그램 임베드 렌더링 보장
 const processInstagramEmbeds = () => {
