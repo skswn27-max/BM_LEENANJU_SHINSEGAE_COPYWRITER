@@ -5520,7 +5520,7 @@ body.lookbook .hero-howto-steps li {
     background: var(--bg-subtle, #F5F5F5);
     border: 1px solid var(--border);
     border-radius: 16px;
-    min-height: 148px;
+    min-height: 176px;
     transition: border-color 0.2s ease, transform 0.2s ease;
 }
 body.lookbook .hero-howto-steps li:hover {
