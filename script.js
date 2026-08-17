@@ -157,7 +157,7 @@ function showHashedCase() {
 
     const id = decodeURIComponent((location.hash || '').replace(/^#/, ''));
     const match = id ? document.getElementById(id) : null;
-    const matchedArticle = match && match.tagName === 'ARTICLE' ? match : null;
+    const matchedArticle = match ? match.closest('article') : null;
 
     articles.forEach((article) => {
         article.hidden = Boolean(matchedArticle) && article !== matchedArticle;

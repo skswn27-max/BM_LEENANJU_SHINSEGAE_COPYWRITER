@@ -5488,6 +5488,47 @@ body.lookbook .hero-career {
     font-size: 0.84rem;
     color: var(--text-muted);
 }
+body.lookbook .hero-howto {
+    width: 100%;
+    margin-top: 24px;
+}
+body.lookbook .hero-howto-label {
+    letter-spacing: 0.18em;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+}
+body.lookbook .hero-howto-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px 28px;
+    max-width: 960px;
+}
+body.lookbook .hero-howto-steps li {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+}
+body.lookbook .hero-howto-num {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    font-weight: 800;
+    color: var(--sg-red);
+}
+body.lookbook .hero-howto-steps p {
+    margin: 0;
+    font-size: 0.86rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--text);
+    letter-spacing: -0.02em;
+}
 body.lookbook .scroll-indicator { display: none; }
 
 html:has(article[id]:target) article[id]:not(:target) {
@@ -5836,6 +5877,10 @@ body.lookbook .career-compact {
 @media (max-width: 900px) {
     body.lookbook .hero-content {
         padding: 120px 24px 40px;
+    }
+    body.lookbook .hero-howto-steps {
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
     .lookbook-row,
     .lookbook-row.reverse {
