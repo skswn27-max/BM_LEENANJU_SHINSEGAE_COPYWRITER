@@ -36,7 +36,7 @@ window.addEventListener('scroll', () => {
 // =============================================
 const typingPhrases = [
     '여배우 패딩',
-    '스포츠 감성 일상화',
+    'Essential Set-Up',
     '테니스 코트 in 서울'
 ];
 
